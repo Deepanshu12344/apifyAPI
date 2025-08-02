@@ -1,32 +1,32 @@
-#How to Install and Run the Application
+How to Install and Run the Application
 
-###1. Clone the repository
+1. Clone the repository
 
 git clone https://github.com/Deepanshu12344/apifyAPI.git
 cd apifyAPI
 
-###2. Run the Backend
+2. Run the Backend
 
 cd server
 npm install
 npm run dev
 
-###3. Run the Frontend
+3. Run the Frontend
 
 cd ../client
 npm install
 npm start
 
-##Actor Used for Testing
+Actor Used for Testing
 
 I used the BeautifulSoup actor from the code template:
 
 "Example of a web scraper that uses Python HTTPX to scrape HTML from URLs provided on input, parses it using BeautifulSoup, and saves results to storage."
 
-##Assumptions and Design Choices
+Assumptions and Design Choices
 
 The app is designed to accept custom input for scraping.
 It allows the user to interactively run the actor and view statistics of the scraped data.
 Frontend and backend are decoupled for clarity and modularity.
 
-##Screenshots & Working Flow
+Screenshots & Working Flow
