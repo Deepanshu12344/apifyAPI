@@ -30,3 +30,5 @@ It allows the user to interactively run the actor and view statistics of the scr
 Frontend and backend are decoupled for clarity and modularity.
 
 Screenshots & Working Flow
+
+![alt text](<Screenshot from 2025-08-02 14-15-55.png>) ![alt text](<Screenshot from 2025-08-02 14-16-10.png>) ![alt text](<Screenshot from 2025-08-02 14-16-41.png>)
