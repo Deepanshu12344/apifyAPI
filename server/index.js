@@ -786,10 +786,18 @@ import axios from 'axios';
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Fixed CORS configuration
 app.use(cors({
-  origin: 'https://apify-orpin.vercel.app/',
-  credentials: true
+  origin: [
+    'https://apify-orpin.vercel.app',  // Your frontend URL (no trailing slash)
+    'http://localhost:3000',          // For local development
+    'http://localhost:5173',          // For Vite dev server
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 app.use(express.json());
 
 let currentApiKey = null;
