@@ -5,7 +5,10 @@ import axios from 'axios';
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://apify-api-efxx.vercel.app/',
+  credentials: true
+}));
 app.use(express.json());
 
 let currentApiKey = null;
