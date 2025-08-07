@@ -10,6 +10,10 @@ app.use(express.json());
 
 let currentApiKey = null;
 
+app.get('/',(request, response)=>{
+  response.json({message: "hello!"});
+}) 
+
 const DEFAULT_SCHEMAS = {
   'web-scraper': {
     start_urls: {
