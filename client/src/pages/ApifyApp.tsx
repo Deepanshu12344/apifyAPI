@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Key, Play, RefreshCw, CheckCircle, XCircle, AlertCircle, Loader, Eye, EyeOff, Code, Zap, Info } from 'lucide-react';
 
-const API_BASE = 'https://apify-api-ten.vercel.app/api';
+const API_BASE = 'https://apifyapi.onrender.com/api';
 
 const ApifyApp = () => {
   const [apiKey, setApiKey] = useState('');
