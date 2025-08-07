@@ -787,7 +787,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({
-  origin: 'https://apify-orpin.vercel.app/',
+  origin: 'https://apifyapi.onrender.com/',
   credentials: true
 }));
 app.use(express.json());
