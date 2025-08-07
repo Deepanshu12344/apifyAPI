@@ -264,8 +264,9 @@ const createSmartDefaultInput = async (actorId, actorName, actorDescription) => 
   console.log('Final smart input:', JSON.stringify(smartInput, null, 2));
   return smartInput;
 };
+const API_BASE_URL = 'https://apify-api-ten.vercel.app/';
 
-app.post('/api/auth', async (req, res) => {
+app.post(`${API_BASE_URL}/api/auth`, async (req, res) => {
   const { apiKey } = req.body;
   
   if (!apiKey) {
